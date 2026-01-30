@@ -129,19 +129,17 @@
   color:#555; 
 } 
 
-/* GRID ALL */ 
+/* GRID ALL (DESKTOP NORMAL) */ 
 .cardGrid{ 
   flex:1; 
   display:grid; 
   grid-template-columns:repeat(2,1fr); 
-  gap:80px; 
+  gap:40px; 
   width:100%; 
   max-width:600px; 
-  overflow-x:auto;
-  white-space:nowrap;
 } 
 
-/* PHOTO CARD ALL */ 
+/* PHOTO CARD */ 
 .photoCard{ 
   background:rgba(255,255,255,0.35); 
   backdrop-filter:blur(12px); 
@@ -150,9 +148,7 @@
   text-align:center; 
   box-shadow:0 8px 20px rgba(0,0,0,0.15); 
   transition:.3s; 
-  display:inline-block;
-  width:260px;
-  white-space:normal;
+  width:100%;
 } 
 
 .photoCard:hover{ 
@@ -176,7 +172,7 @@
   margin-bottom:20px; 
 }
 
-/* ===== TAMBAHAN SCROLL SAMPING HP ===== */
+/* ===== MODE HP (CARD KEPOTONG + SCROLL) ===== */
 @media (max-width:600px){
 
   .cardGrid{
@@ -184,11 +180,11 @@
     overflow-x:auto;
     gap:20px;
     scroll-snap-type:x mandatory;
-    padding-bottom:10px;
+    padding-left:20px;
   }
 
   .photoCard{
-    min-width:260px;
+    min-width:85vw; /* ini bikin kepotong */
     flex-shrink:0;
     scroll-snap-align:center;
   }
