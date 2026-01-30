@@ -1,12 +1,13 @@
 .container{ 
-    min-height:100dvh;      /* lebih aman di HP */
+  min-height:100dvh;      
+  background:linear-gradient(135deg,#daadf5,#ff9add,#b4fdff);
   background-size:cover;
   background-attachment:fixed; 
   display:flex; 
   justify-content:center; 
   align-items:center; 
-  background:linear-gradient(135deg,#daadf5,#ff9add,#b4fdff); 
   font-family:Poppins,sans-serif; 
+  overflow-x:hidden;
 } 
 
 /* CARD */ 
@@ -86,13 +87,15 @@
 
 /* PAGE FANCY */ 
 .pageFancy{ 
-  min-height:100vh; 
+  min-height:100dvh; 
   display:flex; 
   flex-direction:column; 
   justify-content:space-between; 
   align-items:center; 
   padding:30px 20px; 
   background:linear-gradient(135deg,#daadf5,#ff9add,#b4fdff); 
+  background-size:cover;
+  background-repeat:no-repeat;
   font-family:Poppins,sans-serif; 
 } 
 
@@ -166,4 +169,23 @@
 .backBtn{ 
   margin-top:40px; 
   margin-bottom:20px; 
+}
+
+/* ===== TAMBAHAN SCROLL SAMPING HP ===== */
+@media (max-width:600px){
+
+  .cardGrid{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    scroll-snap-type:x mandatory;
+    padding-bottom:10px;
+  }
+
+  .photoCard{
+    min-width:260px;
+    flex-shrink:0;
+    scroll-snap-align:center;
+  }
+
 }
