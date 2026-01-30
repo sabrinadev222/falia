@@ -9,7 +9,7 @@ export default function BirthdayPage() {
 
         {/* JUDUL DENGAN ICON GAMBAR */}
         <h1 className="title" style={{ display: "flex", alignItems: "center", gap: "12px", justifyContent: "center" }}>
-          <Image src="/partyY.png" alt="party" width={100} height={150} />
+          <Image src="/partyy.png" alt="party" width={100} height={150} />
           HAPPY BIRTHDAY
           <Image src="/partyy.png" alt="party" width={100} height={150} />
         </h1>
