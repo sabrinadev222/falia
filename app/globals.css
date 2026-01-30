@@ -82,12 +82,11 @@
   width:60%;
 }
 
-/* PAGE FANCY */
 .pageFancy{
   min-height:100vh;
   display:flex;
-  flex-direction:column;          /* ✅ bikin vertikal */
-  justify-content:space-between;  /* ✅ atas - tengah - bawah */
+  flex-direction:column;
+  justify-content:flex-start; /* GANTI INI */
   align-items:center;
   padding:30px 20px;
 
