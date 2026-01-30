@@ -132,12 +132,12 @@ html, body{
 
 /* GRID ALL */
 .cardGrid{
-  flex:1;                         /* ✅ dorong ke tengah */
+  flex:1;
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:80px;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;            /* dari 80 → 20 */
   width:100%;
-  max-width:600px;
+  max-width:500px;     /* kecilkan dikit */
 }
 
 
