@@ -1,5 +1,7 @@
 .container{ 
-  min-height:100vh; 
+    min-height:100dvh;      /* lebih aman di HP */
+  background-size:cover;
+  background-attachment:fixed; 
   display:flex; 
   justify-content:center; 
   align-items:center; 
