@@ -137,6 +137,8 @@
   gap:80px; 
   width:100%; 
   max-width:600px; 
+  overflow-x:auto;
+  white-space:nowrap;
 } 
 
 /* PHOTO CARD ALL */ 
@@ -148,6 +150,9 @@
   text-align:center; 
   box-shadow:0 8px 20px rgba(0,0,0,0.15); 
   transition:.3s; 
+  display:inline-block;
+  width:260px;
+  white-space:normal;
 } 
 
 .photoCard:hover{ 
